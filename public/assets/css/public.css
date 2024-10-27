@@ -1,0 +1,110 @@
+/* This stylesheet is used to style the public-facing components of the plugin. */
+
+.amplayer-container{font-size:14px;background:#565555;color:#fff;padding:10px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.amplayer-container .amplayer-ad-container{display:none;}
+.amplayer-container .amplayer-container-inside{}
+.amplayer-container .amplayer-container-inside .amplayer-row-content{overflow:hidden;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container{float:left;min-height:60px;min-width:234px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container .amplayer-details-track{overflow:hidden;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container .amplayer-details-track .amplayer-track-cover{float:left;width:60px;height:60px;background:#2d2d2d;margin-right:10px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container .amplayer-details-track .amplayer-track-info{float:left;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container .amplayer-details-track .amplayer-track-info .amplayer-track-name{font-size:1.1em;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container .amplayer-details-track .amplayer-track-info .amplayer-track-artist{font-size:0.9em;}
+
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-details-container .amplayer-details-ad{display:none;width:234px;height:60px;}
+
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-controls-container{float:right;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-controls-container .amplayer-btn{cursor:pointer;float:left;width:32px;height:32px;background:#ff0000 url('../img/ad-player-skin.png') no-repeat;
+-webkit-border-radius: 90px;
+-moz-border-radius: 90px;
+border-radius: 90px;
+}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-controls-container .amplayer-btn.amplayer-btn-play{background-position:0px 0px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-controls-container .amplayer-btn.amplayer-btn-pause{background-position:0px -32px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-controls-container .amplayer-btn.amplayer-btn-prev{background-position:0px -64px;margin-right:5px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-content .amplayer-controls-container .amplayer-btn.amplayer-btn-next{background-position:0px -96px;margin-left:5px;}
+
+.amplayer-container .amplayer-container-inside .amplayer-row-footer{margin-top:10px;padding-top:10px;border-top:1px solid #4a4949;height:25px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-links-container{float:left;font-size:1em;line-height:1em;}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-links-container a{text-decoration:none}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-links-container a:hover{text-decoration:none}
+
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-volume-container{float:right;position:relative;width:150px;height:15px;}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-volume-container .amplayer-volume-slider{border-width: 1px;border-style:solid;border-color:#333 #333 #777 #333; border-radius:25px; width:100px;position:absolute; height:13px; background-color:#8e8d8d; background: url('../img/ad-player-skin.png') repeat 0px -128px;left: 20px;
+  box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5),   
+   0 1px 0 0px rgba(250, 250, 250, .5);  
+}  
+
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-volume-container .amplayer-volume-tooltip {
+	position: absolute;
+	display: block;
+	top: -25px;
+	width: 35px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	font: 10pt Tahoma, Arial, sans-serif ;
+	border-radius: 3px;
+	border: 1px solid #333;
+    -webkit-box-shadow:  1px 1px 2px 0px rgba(0, 0, 0, .3);
+    box-shadow:  1px 1px 2px 0px rgba(0, 0, 0, .3);
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: -moz-linear-gradient(top,  rgba(69,72,77,0.5) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,0.5)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(69,72,77,0.5) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(69,72,77,0.5) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(69,72,77,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(69,72,77,0.5) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8045484d', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-volume-container .amplayer-volume-power {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 15px;
+	right: -5px;
+	background: url('../img/ad-player-skin.png') no-repeat 0 -192px;
+	position: absolute;
+}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-volume-container .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: url('../img/ad-player-skin.png') no-repeat 0 -160px;
+	font-weight: bold;
+	color: #1C94C4;
+	outline: none;
+	top: -4px;
+	margin-left: -12px;
+}
+.amplayer-container .amplayer-container-inside .amplayer-row-footer .amplayer-volume-container .ui-slider-range {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	border: 0;
+	top: 0;
+	height: 100%;
+	border-radius: 25px;
+}
+
+
+
+
+
